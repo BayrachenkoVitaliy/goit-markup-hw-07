@@ -1,0 +1,49 @@
+.partner-company{
+    padding: 94px 0;
+}
+.header-partner{
+    margin-bottom: 50px;
+    
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+}
+.partner-logo-box{
+display: flex;
+flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.partner-link{
+    width: 170px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+
+    border-radius: 4px;
+    border: 1px solid;
+    border-color: var(--gray-partner-color);
+    color: var(--gray-partner-color);
+}
+.partner-link:hover,
+.partner-link:focus{
+border: 1px solid ;
+border-color: var(--blue-maine-color);
+    }
+
+.partner-logo{
+fill: currentColor;
+}
+.partner-link:hover,
+.partner-link:focus{
+    color: var(--blue-maine-color);
+}
+
+

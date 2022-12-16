@@ -1,0 +1,40 @@
+.heroi{ 
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heroiImg\ .jpg)  ;
+   background-repeat: no-repeat;
+   background-size: 1600px ;
+   background-position: center;
+   padding-top: 200px;
+   padding-bottom: 200px;
+   
+   }
+   .heroi-conteiner{
+    text-align: center;
+    }
+   
+   
+   .heroi-header{
+   margin-bottom: 30px;
+   width: 696px;
+   margin-left: auto;
+   margin-right: auto;
+       
+   font-weight: 900;
+   font-size: 44px;
+   line-height: 1.36;
+   letter-spacing: 0.06em;
+   text-transform: uppercase;
+   color:var(--light-maine-color);
+   
+   }
+   .heroi-button{
+   min-width: 216px;
+   padding: 10px;
+   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+   }
+   .heroi-button:hover,
+   .heroi-button:focus
+   {
+   background-color: #188CE8;
+   cursor: pointer;
+   }
+   

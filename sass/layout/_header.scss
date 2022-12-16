@@ -1,0 +1,29 @@
+.header{
+
+    border-bottom: 1px solid #ECECEC;
+    }
+.header-conteiner{
+    display: flex;
+
+}
+.current::after{
+    content: "";
+position: absolute;
+bottom: -2px;
+left: -4%;
+
+    display: inline-block;
+    width: 108%;
+    height: 4px;
+    background-color: var(--blue-maine-color);
+    border-radius: 2px;
+}
+
+.header-link-items:hover,
+.header-link-items:focus{
+    color: var(--blue-maine-color);
+    
+}
+
+
+

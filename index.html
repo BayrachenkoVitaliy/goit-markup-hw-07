@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+
+    <title>webstudio</title>
+  </head>
+  <body>
+    <!-- header-->
+
+    <header class="header">
+      <div class="conteiner header-conteiner">
+        <nav class="header-nav">
+          <a class="link logo" href="./index.html"
+            ><span class="logo-web">Web</span>Studio
+          </a>
+          <ul class="header-link list">
+            <li class="header-list">
+              <a class="header-link-items current link" href="./index.html"
+                >Студія
+              </a>
+            </li>
+            <li class="header-list">
+              <a class="header-link-items link" href="./portfolio_.html"
+                >Портфоліо
+              </a>
+            </li>
+            <li class="header-list">
+              <a class="header-link-items link" href="">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-contact link list">
+          <li class="header-contact-list">
+            <a
+              class="header-contact-link link"
+              href="mailto:info@devstudio.com"
+            >
+              <svg class="icon-email" width="16" height="12">
+                <use
+                  href="./images/spraite_optimaze.svg#icon-envelope-hover"
+                ></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="header-contact-list">
+            <a class="header-contact-link link" href="tel:+380961111111">
+              <svg class="icon-tel" width="10" height="16">
+                <use href="./images/spraite_optimaze.svg#icon-smartphone"></use>
+              </svg>
+
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <!--     Heroi-->
+      <section class="heroi">
+        <div class="conteiner heroi-conteiner">
+          <h1 class="heroi-header">Ефективні рішення для вашого бізнесу</h1>
+          <button class="heroi-button button" type="button" data-modal-open>Замовити послугу</button>
+        </div>
+      </section>
+
+      <!--benefits-->
+
+      <section class="benefits section">
+        <div class="conteiner benefits-conteiner">
+          <h2 class="benefits-header visualy__hidden">Переваги</h2>
+          <ul class="benefits-list list">
+            <li class="benefits-items">
+              <div class="icon-box-benefits">
+                <svg class="icon-benefits" width="44px" height="44px">
+                  <use
+                    href="./images/spraite_optimaze.svg#icon-antenna-1"
+                  ></use>
+                </svg>
+              </div>
+
+              <h3 class="benefits-items-heder">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="benefits-items-text">
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
+            <li class="benefits-items">
+              <div class="icon-box-benefits">
+                <svg class="icon-benefits">
+                  <use href="./images/spraite_optimaze.svg#icon-clock-1"></use>
+                </svg>
+              </div>
+              <h3 class="benefits-items-heder">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="benefits-items-text">
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+              </p>
+            </li>
+            <li class="benefits-items">
+              <div class="icon-box-benefits">
+                <svg class="icon-benefits">
+                  <use
+                    href="./images/spraite_optimaze.svg#icon-diagram-1"
+                  ></use>
+                </svg>
+              </div>
+              <h3 class="benefits-items-heder">ПЛАНУВАННЯ</h3>
+              <p class="benefits-items-text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="benefits-items">
+              <div class="icon-box-benefits">
+                <svg class="icon-benefits">
+                  <use
+                    href="./images/spraite_optimaze.svg#icon-astronaut-1"
+                  ></use>
+                </svg>
+              </div>
+              <h3 class="benefits-items-heder">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="benefits-items-text">
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--Our Activity-->
+
+      <section class="activity section">
+        <div class="conteiner activity-conteiner">
+          <h2 class="activityd-header">Чим ми займаємося</h2>
+          <ul class="activity-list list">
+            <li class="activity-items">
+              <img
+                class="activity-img"
+                src="./images/saiteimg.jpg"
+                alt="Розробка сайтів"
+                width="370"
+              />
+              <div class="activity-description">
+                <h3 class="activity-description-text">Десктопні додатки</h3>
+              </div>
+            </li>
+            <li class="activity-items">
+              <img
+                class="activity-img"
+                src="./images/Mobailimg.jpg"
+                alt="Розробка мобільних додатків"
+                width="370"
+              />
+              <div class="activity-description">
+                <h3 class="activity-description-text">Мобільні додатки</h3>
+              </div>
+            </li>
+            <li class="activity-items">
+              <img
+                class="activity-img"
+                src="./images/disainimg.jpg"
+                alt="Дизайн сатів"
+                width="370"
+              />
+              <div class="activity-description">
+                <h3 class="activity-description-text">Дизайнерські рішення</h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!------------------team-->
+      <section class="team-section">
+        <div class="conteiner team-conteiner">
+          <h2 class="team-header">Наша команда</h2>
+
+          <ul class="team-list list">
+            <li class="team-items">
+              <img
+                class="team-img"
+                src="./images/demynenko.jpg"
+                alt="photodemynenko"
+                width="270"
+              />
+
+              <div class="team-items-text">
+                <h3 class="team-card">Ігор Дем'яненко</h3>
+                <p class="team-card-text" lang="en">Product Designer</p>
+                <ul class="icon-box-social list">
+                  <!--instagram-->
+
+                  <li class="icon-element-social">
+                    <a href="" class="link-social">
+                      <svg class="icon-social" width="20" height="20">
+                        <use
+                          href="./images/spraite_optimaze.svg#icon-instagram-2"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!--twitter-->
+                  <li class="icon-element-social">
+                    <a href="" class="link-social">
+                      <svg class="icon-social" width="20" height="20">
+                        <use
+                          href="./images/spraite_optimaze.svg#icon-twitter-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!--facebook-->
+                  <li class="icon-element-social">
+                    <a href="" class="link-social">
+                      <svg class="icon-social" width="20" height="20">
+                        <use
+                          href="./images/spraite_optimaze.svg#icon-facebook-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!--linkedin-->
+                  <li class="icon-element-social">
+                    <a href="" class="link-social">
+                      <svg class="icon-social" width="20" height="20">
+                        <use
+                          href="./images/spraite_optimaze.svg#icon-linkedin-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team-items">
+              <img
+                class="team-img"
+                src="./images/repina.jpg"
+                alt="photorepina"
+                width="270"
+              />
+              <div class="team-items-text">
+                <h3 class="team-card">Ольга Рєпіна</h3>
+                <p class="team-card-text" lang="en">Frontend Developer</p>
+                <ul class="icon-box-social list">
+                  <!--instagram-->
+
+                  <li class="icon-element-social">
+                    <a href="" class="link-social">
+                      <svg class="icon-social" width="20" height="20">
+                        <use
+                          href="./images/spraite_optimaze.svg#icon-instagram-2"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!--twitter-->
+                  <li class="icon-element-social">
+                    <a href="" class="link-social">
+                      <svg class="icon-social" width="20" height="20">
+                        <use
+                          href="./images/spraite_optimaze.svg#icon-twitter-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!--facebook-->
+                  <li class="icon-element-social">
+                    <a href="" class="link-social">
+                      <svg class="icon-social" width="20" height="20">
+                        <use
+                          href="./images/spraite_optimaze.svg#icon-facebook-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!--linkedin-->
+                  <li class="icon-element-social">
+                    <a href="" class="link-social">
+                      <svg class="icon-social" width="20" height="20">
+                        <use
+                          href="./images/spraite_optimaze.svg#icon-linkedin-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team-items">
+              <img
+                class="team-img"
+                src="./images/tarasov.jpg"
+                alt="phototarasov"
+                width="270"
+              />
+              <div class="team-items-text">
+                <h3 class="team-card">Микола Тарасов</h3>
+                <p class="team-card-text" lang="en">Marketing</p>
+                <ul class="icon-box-social list">
+                  <!--instagram-->
+
+                  <li class="icon-element-social">
+                    <a href="" class="link-social">
+                      <svg class="icon-social" width="20" height="20">
+                        <use
+                          href="./images/spraite_optimaze.svg#icon-instagram-2"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!--twitter-->
+                  <li class="icon-element-social">
+                    <a href="" class="link-social">
+                      <svg class="icon-social" width="20" height="20">
+                        <use
+                          href="./images/spraite_optimaze.svg#icon-twitter-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!--facebook-->
+                  <li class="icon-element-social">
+                    <a href="" class="link-social">
+                      <svg class="icon-social" width="20" height="20">
+                        <use
+                          href="./images/spraite_optimaze.svg#icon-facebook-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!--linkedin-->
+                  <li class="icon-element-social">
+                    <a href="" class="link-social">
+                      <svg class="icon-social" width="20" height="20">
+                        <use
+                          href="./images/spraite_optimaze.svg#icon-linkedin-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team-items">
+              <img
+                class="team-img"
+                src="./images/ermakov.jpg"
+                alt="photoermakov"
+                width="270"
+              />
+              <div class="team-items-text">
+                <h3 class="team-card">Михайло Єрмаков</h3>
+                <p class="team-card-text" lang="en">UI Designer</p>
+                <ul class="icon-box-social list">
+                  <!--instagram-->
+
+                  <li class="icon-element-social">
+                    <a href="" class="link-social">
+                      <svg class="icon-social" width="20" height="20">
+                        <use
+                          href="./images/spraite_optimaze.svg#icon-instagram-2"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!--twitter-->
+                  <li class="icon-element-social">
+                    <a href="" class="link-social">
+                      <svg class="icon-social" width="20" height="20">
+                        <use
+                          href="./images/spraite_optimaze.svg#icon-twitter-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!--facebook-->
+                  <li class="icon-element-social">
+                    <a href="" class="link-social">
+                      <svg class="icon-social" width="20" height="20">
+                        <use
+                          href="./images/spraite_optimaze.svg#icon-facebook-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <!--linkedin-->
+                  <li class="icon-element-social">
+                    <a href="" class="link-social">
+                      <svg class="icon-social" width="20" height="20">
+                        <use
+                          href="./images/spraite_optimaze.svg#icon-linkedin-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- partner company-->
+      <section class="partner-company">
+        <div class="conteiner">
+          <h2 class="header-partner">Постійні клієнти</h2>
+
+          <ul class="partner-logo-box list">
+            <li>
+              <a href="" class="partner-link link">
+                <svg class="partner-logo" width="42" height="46">
+                  <use href="./images/spraite_optimaze.svg#icon-group"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="partner-link link">
+                <svg class="partner-logo" width="40" height="52">
+                  <use href="./images/spraite_optimaze.svg#icon-group1"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="partner-link link">
+                <svg class="partner-logo" width="44" height="42">
+                  <use href="./images/spraite_optimaze.svg#icon-group2"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="partner-link link">
+                <svg class="partner-logo" width="84" height="40">
+                  <use href="./images/spraite_optimaze.svg#icon-group3"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="partner-link link">
+                <svg class="partner-logo" width="62" height="46">
+                  <use href="./images/spraite_optimaze.svg#icon-group4"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="partner-link link">
+                <svg class="partner-logo" width="94" height="44">
+                  <use href="./images/spraite_optimaze.svg#icon-group5"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!--footer-->
+    <footer class="footer">
+      <div class="conteiner footer-conteiner">
+        <div class="box-logo-adrres">
+          <a class="link logo-footer " href="./index.html"
+            ><span class="logo-web">Web</span>Studio
+          </a>
+          <address class="footer-adress">
+            <ul class="footer-contact link list">
+              <li class="footer-list">
+                <a
+                  class="footer-adress-geoposition link text"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000"
+                >
+                  м. Київ, пр-т Лесі Українки, 26
+                </a>
+              </li>
+              <li class="footer-list">
+                <a class="foter-link link text" href="tel:+380961111111"
+                  >+38 096 111 11 11
+                </a>
+              </li>
+              <li class="footer-list">
+                <a class="foter-link link text" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-join">
+          <b class="discraption-footer-join text"> приєднуйтесь </b>
+
+          <ul class="icon-box-social list">
+            <!--instagram-->
+            <li>
+              <a href="" class="link-social-footer">
+                <svg class="icon-social-footer" width="20" height="20">
+                  <use
+                    href="./images/spraite_optimaze.svg#icon-instagram-2"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <!--twitter-->
+            <li>
+              <a href="" class="link-social-footer">
+                <svg class="icon-social-footer" width="20" height="20">
+                  <use
+                    href="./images/spraite_optimaze.svg#icon-twitter-1"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <!--facebook-->
+            <li>
+              <a href="" class="link-social-footer">
+                <svg class="icon-social-footer" width="20" height="20">
+                  <use
+                    href="./images/spraite_optimaze.svg#icon-facebook-1"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <!--linkedin-->
+            <li>
+              <a href="" class="link-social-footer">
+                <svg class="icon-social-footer" width="20" height="20">
+                  <use
+                    href="./images/spraite_optimaze.svg#icon-linkedin-1"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--Fotter_form-->
+        <form class="footer-form">
+          <p class="footer-form-title">
+            Підпишіться на розсилку
+          </p>
+          <div >
+          <input class="footer-form-field" type="email" name="user-email" required placeholder="E-mail">
+        <button class="footer-form-btn button" type="submit">Підписатися<svg class="footer-form-icon-send" width="24px" height="24px">
+          <use href="./images/spraite_optimaze.svg#icon-icon-send1"></use>
+        </svg>
+        </button>
+        </div>
+        </form>
+      </div>
+    </footer>
+
+    <!--Modal-->
+    <div class="backdrop is-hidden " data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close >
+          <svg class="icon-modal-close" width="18px" height="18px">
+            <use href="./images/spraite_optimaze.svg#icon-close"></use>
+          </svg>
+        </button>
+<!--Modal Form-->
+        <form class="form-modal">
+          <p class="modal-title">
+            Залиште свої дані, ми вам передзвонимо
+          </p>
+          <label class="label-contact" >
+                Ім'я
+            <span class="modal-field-box">
+              <input type="text" class="contact-field" name="user-name" >
+              <svg class="modal-icon" height="18px">
+                <use href="./images/spraite_optimaze.svg#icon-Vector-modal-user">   </use>
+              </svg>
+            </span>
+          </label>
+          <label class="label-contact">
+              Телефон
+          <span class="modal-field-box">
+            <input type="tel" class="contact-field" name="user-phone" >
+            <svg class="modal-icon"  height="18px">
+              <use href="./images/spraite_optimaze.svg#icon-Vector-modal-telefon">   </use>
+            </svg>
+          </span>
+          </label>
+          <label class="label-contact">
+            Пошта
+            <span class="modal-field-box">
+             <input type="email" class="contact-field" name="user-email" >
+                  <svg class="modal-icon"  height="18px">
+                <use href="./images/spraite_optimaze.svg#icon-Vector-mail">   </use>
+              </svg>
+            </span>
+          </label>
+
+                <label class="label-contact-coment">
+                  Коментар
+          <textarea name="comment" class="modal-coment" placeholder="Введіть текст" ></textarea>
+          </label>
+
+          <div class="modal-checkbox-consent">
+            <input type="checkbox" class="modal-consent visualy__hidden" name="user-consent" id="id-cosent" required >
+            <label class="modal-consent-text" for="id-cosent">Погоджуюся з розсилкою та приймаю &nbsp; </label> 
+            <a class="modal-link link" href="">Умови договору</a>
+          </div>
+            <button type="submit" class="modal-button-klick button">Відправити</button>
+        </form>
+          </div>
+    </div>
+    <script src="./js/modal.js">
+    </script>
+  </body>
+</html>
