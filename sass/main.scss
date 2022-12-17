@@ -6,24 +6,29 @@
 
 @import './components/button';
 @import './components/logo';
-
-@import'./layout/header';
 @import './components/navigation';
 @import './components/contacts';
-
-@import './layout/heroi';
-
-@import './layout/benefits';
-
-@import './layout/activity';
-
-@import './layout/team';
 @import './components/icon-social';
-
-@import './layout/partner-company';
-
-@import './layout/footer';
 @import './components/adress';
+@import './components/backdrop';
+@import './components/modal';
+@import './components/form';
+@import './components/navigator-secondary';
+@import './components/portfolio-items';
+
+@import'./layout/header';
+@import './layout/heroi';
+@import './layout/benefits';
+@import './layout/activity';
+@import './layout/team';
+@import './layout/partner-company';
+@import './layout/footer';
+@import './layout/footer-form';
+@import './layout/portfolio';
+
+
+
+
 
 
 

@@ -24,7 +24,7 @@
             align-items: center;
        
         height:120px ;
-        background-color: var(--icon-backgraund);
+        background-color: var(--backgraund__icon);
     margin-bottom: 30px;
     
     }
@@ -40,7 +40,7 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color:var(--black-maine-color) ;
+    color:var(--maine__color__dark) ;
     
     }
     .benefits-items-text{
@@ -48,6 +48,6 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--gray-maine-color);
+    color: var(--maine__color__secondery);
     
     }

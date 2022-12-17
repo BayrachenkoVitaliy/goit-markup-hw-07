@@ -14,7 +14,7 @@
      width: 270px;
      margin-left: 30px;
      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-     background-color: var(--light-maine-color);
+     background-color: var(--maine__color__light);
     
  }
  
@@ -27,7 +27,7 @@
  font-size: 36px;
  line-height: 1.17;
  letter-spacing: 0.03em;
- color:var(--black-maine-color) ;
+ color:var(--maine__color__dark) ;
  }
  .team-items-text{
      padding-top: 30px;
@@ -44,7 +44,7 @@
  font-size: 16px;
  line-height: 19px;
  letter-spacing: 0.03em;
- color:var(--black-maine-color) ;
+ color:var(--maine__color__dark) ;
  
  }
  .team-card-text{
@@ -54,7 +54,7 @@
  font-size: 16px;
  line-height: 1.19;
  letter-spacing: 0.03em;
- color:var(--gray-maine-color);
+ color:var(--maine__color__secondery);
  }
  
  

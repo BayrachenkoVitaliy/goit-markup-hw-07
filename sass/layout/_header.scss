@@ -15,13 +15,13 @@ left: -4%;
     display: inline-block;
     width: 108%;
     height: 4px;
-    background-color: var(--blue-maine-color);
+    background-color: var(--accent__color);
     border-radius: 2px;
 }
 
 .header-link-items:hover,
 .header-link-items:focus{
-    color: var(--blue-maine-color);
+    color: var(--accent__color);
     
 }
 
