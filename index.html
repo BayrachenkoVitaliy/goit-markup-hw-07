@@ -551,12 +551,13 @@
         </div>
         <!--Fotter_form-->
         <form class="footer-form">
-          <p class="footer-form-title">
+          <p class="footer-form__title">
             Підпишіться на розсилку
           </p>
           <div >
-          <input class="footer-form-field" type="email" name="user-email" required placeholder="E-mail">
-        <button class="footer-form-btn button" type="submit">Підписатися<svg class="footer-form-icon-send" width="24px" height="24px">
+          <input class="footer-form__field" type="email" name="user-email" required placeholder="E-mail">
+        <button class="button__footer-form button" 
+        type="submit">Підписатися<svg class="footer-form__icon" width="24px" height="24px">
           <use href="./images/spraite_optimaze.svg#icon-icon-send1"></use>
         </svg>
         </button>
@@ -568,55 +569,55 @@
     <!--backdrop-->
     <div class="backdrop is-hidden " data-modal>
       <div class="modal">
-        <button type="button" class="modal-close-btn" data-modal-close >
-          <svg class="icon-modal-close" width="18px" height="18px">
+        <button type="button" class="modal__btn" data-modal-close >
+          <svg class="modal__icon" width="18px" height="18px">
             <use href="./images/spraite_optimaze.svg#icon-close"></use>
           </svg>
         </button>
 <!--Modal Form-->
         <form class="form-modal">
-          <p class="modal-title">
+          <p class="form__title">
             Залиште свої дані, ми вам передзвонимо
           </p>
-          <label class="label-contact" >
+          <label class="label" >
                 Ім'я
-            <span class="modal-field-box">
-              <input type="text" class="contact-field" name="user-name" >
-              <svg class="modal-icon" height="18px">
+            <span class="label__box">
+              <input type="text" class="label__field" name="user-name" >
+              <svg class="label__icon" height="18px">
                 <use href="./images/spraite_optimaze.svg#icon-Vector-modal-user">   </use>
               </svg>
             </span>
           </label>
-          <label class="label-contact">
+          <label class="label">
               Телефон
-          <span class="modal-field-box">
-            <input type="tel" class="contact-field" name="user-phone" >
-            <svg class="modal-icon"  height="18px">
+          <span class="label__box">
+            <input type="tel" class="label__field" name="user-phone" >
+            <svg class="label__icon"  height="18px">
               <use href="./images/spraite_optimaze.svg#icon-Vector-modal-telefon">   </use>
             </svg>
           </span>
           </label>
-          <label class="label-contact">
+          <label class="label">
             Пошта
-            <span class="modal-field-box">
-             <input type="email" class="contact-field" name="user-email" >
-                  <svg class="modal-icon"  height="18px">
+            <span class="label__box">
+             <input type="email" class="label__field" name="user-email" >
+                  <svg class="label__icon"  height="18px">
                 <use href="./images/spraite_optimaze.svg#icon-Vector-mail">   </use>
               </svg>
             </span>
           </label>
 
-                <label class="label-contact-coment">
+                <label class="coment">
                   Коментар
-          <textarea name="comment" class="modal-coment" placeholder="Введіть текст" ></textarea>
+          <textarea name="comment" class="coment__field" placeholder="Введіть текст" ></textarea>
           </label>
 
-          <div class="modal-checkbox-consent">
-            <input type="checkbox" class="modal-consent visualy__hidden" name="user-consent" id="id-cosent" required >
-            <label class="modal-consent-text" for="id-cosent">Погоджуюся з розсилкою та приймаю &nbsp; </label> 
-            <a class="modal-link link" href="">Умови договору</a>
+          <div class="consent">
+            <input type="checkbox" class="consent__field visualy__hidden" name="user-consent" id="id-cosent" required >
+            <label class="consent__text" for="id-cosent">Погоджуюся з розсилкою та приймаю &nbsp; </label> 
+            <a class="consent__link link" href="">Умови договору</a>
           </div>
-            <button type="submit" class="modal-button-klick button">Відправити</button>
+            <button type="submit" class="button__form button">Відправити</button>
         </form>
           </div>
     </div>

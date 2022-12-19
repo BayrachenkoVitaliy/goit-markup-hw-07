@@ -265,7 +265,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn {
+.modal__btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -282,17 +282,15 @@ img {
   color: var(--maine__color__dark);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.icon-modal-close {
-  fill: currentColor;
-}
-
-.modal-close-btn:hover,
-.modal-close-btn:focus {
+.modal__btn:hover, .modal__btn:focus {
   color: var(--accent__color);
 }
 
-.modal-title {
+.modal__icon {
+  fill: currentColor;
+}
+
+.form__title {
   margin-bottom: 12px;
   text-align: center;
   font-weight: 700;
@@ -303,7 +301,7 @@ img {
   color: #212121;
 }
 
-.label-contact {
+.label {
   display: block;
   margin-bottom: 10px;
   font-size: 12px;
@@ -312,13 +310,13 @@ img {
   color: var(--maine__color__secondery);
 }
 
-.modal-field-box {
+.label__box {
   display: block;
   position: relative;
   margin-top: 4px;
 }
 
-.contact-field {
+.label__field {
   display: block;
   width: 100%;
   height: 40px;
@@ -328,16 +326,26 @@ img {
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.contact-field:hover {
+.label__field:hover {
   cursor: pointer;
 }
-
-.contact-field:focus {
+.label__field:focus {
   border: 1px solid var(--accent__color);
 }
 
-.label-contact-coment {
+.label__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  width: 18px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__field:focus + .label__icon {
+  fill: var(--accent__color);
+}
+
+.coment {
   display: block;
   margin-bottom: 20px;
   font-size: 12px;
@@ -346,20 +354,7 @@ img {
   color: var(--maine__color__secondery);
 }
 
-.modal-icon {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  transform: translateY(-50%);
-  width: 18px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contact-field:focus + .modal-icon {
-  fill: var(--accent__color);
-}
-
-.modal-coment {
+.coment__field {
   margin-top: 4px;
   display: block;
   padding: 12px 16px;
@@ -371,51 +366,34 @@ img {
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-coment:hover {
+.coment__field:hover {
   cursor: pointer;
 }
-
-.modal-coment:focus {
+.coment__field:focus {
   border: 1px solid var(--accent__color);
 }
-
-.modal-coment::placeholder {
+.coment__field::placeholder {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-checkbox-consent {
+.consent {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
 }
 
-.modal-consent:checked + .modal-consent-text::before {
-  background-image: url(../images/icon\ check-blue\(1\).svg);
-  background-position: center;
-}
-
-.modal-consent:focus + .modal-consent-text::before {
-  border-color: #2196F3;
-}
-
-.modal-coment:focus .modal-consent-text::before {
-  border-color: var(--accent__color);
-}
-
-.modal-consent-text {
+.consent__text {
   display: flex;
   align-items: center;
 }
-
-.modal-consent-text:hover {
+.consent__text:hover {
   cursor: pointer;
 }
 
-.modal-consent-text::before {
+.consent__text::before {
   content: "";
   display: inline-block;
   margin-right: 7px;
@@ -427,13 +405,23 @@ img {
   letter-spacing: 0.03em;
   transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.consent__field:checked + .consent__text::before {
+  background-image: url(../images/icon\ check-blue\(1\).svg);
+  background-position: center;
+}
+.consent__field:focus + .consent__text::before {
+  border-color: #2196F3;
+}
+.consent__field:focus .consent__text::before {
+  border-color: var(--accent__color);
+}
 
-.modal-link {
+.consent__link {
   color: var(--accent__color);
   text-decoration: underline;
 }
 
-.modal-button-klick {
+.button__form {
   display: block;
   min-width: 200px;
   height: 50px;
@@ -442,8 +430,7 @@ img {
   padding: 10px;
   border: none;
 }
-
-.modal-button-klick:hover {
+.button__form:hover {
   cursor: pointer;
   background-color: #188CE8;
 }
@@ -544,15 +531,6 @@ img {
   pointer-events: all;
 }
 
-.items-header-en {
-  display: flex;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--maine__color__dark);
-}
-
 .potrfolio-items-header {
   display: block;
   margin-bottom: 4px;
@@ -574,7 +552,7 @@ img {
 
 .portfolio-list-text {
   margin-top: 20px;
-  padding: 20px 24px;
+  padding: 20px 20px;
   border-right: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
   border-left: 1px solid #EEEEEE;
@@ -901,7 +879,7 @@ img {
   margin-left: 94px;
 }
 
-.footer-form-title {
+.footer-form__title {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -911,7 +889,7 @@ img {
   color: var(--maine__color__light);
 }
 
-.footer-form-field {
+.footer-form__field {
   width: 358px;
   height: 50px;
   background-color: inherit;
@@ -923,22 +901,19 @@ img {
   color: var(--maine__color__light);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-form-field:hover {
+.footer-form__field:hover {
   cursor: pointer;
 }
-
-.footer-form-field:focus {
+.footer-form__field:focus {
   border-color: var(--accent__color);
 }
-
-.footer-form-field::placeholder {
+.footer-form__field::placeholder {
   font-size: 16px;
   line-height: 20px;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-form-btn {
+.button__footer-form {
   position: relative;
   display: inline-block;
   min-width: 200px;
@@ -946,14 +921,12 @@ img {
   padding: 10px 62px 10px 28px;
   border: none;
 }
-
-.footer-form-btn:hover,
-.footer-form-btn:focus {
+.button__footer-form:hover, .button__footer-form:focus {
   cursor: pointer;
   background-color: #188CE8;
 }
 
-.footer-form-icon-send {
+.footer-form__icon {
   position: absolute;
   top: 50%;
   right: 28px;
