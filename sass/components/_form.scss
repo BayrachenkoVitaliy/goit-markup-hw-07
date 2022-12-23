@@ -56,10 +56,11 @@
         width: 18px;
         transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-        .form__field:focus+&{
+        .label__field:focus+&{
             fill: var(--accent__color);
         }
     }
+   
    
     
     
@@ -131,7 +132,7 @@
     transition:background-image 250ms cubic-bezier(0.4, 0, 0.2, 1),
             border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-            .consent__field:checked+&{
+           .consent__field:checked+ &{
                 background-image:url(../images/icon\ check-blue\(1\).svg);
                
                background-position: center;
@@ -148,11 +149,14 @@
     
         
     .consent__link{
+        @extend %link;
+
         color: var(--accent__color);
         text-decoration: underline;
     }
     
     .button__form{
+        @extend %button;
         display: block;
     min-width: 200px;
     height: 50px;

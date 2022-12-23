@@ -18,6 +18,8 @@ flex-direction: row;
 }
 
 .partner-link{
+    @extend %link;
+
     width: 170px;
     height: 92px;
     display: flex;

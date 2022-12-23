@@ -1,11 +1,15 @@
-.icon-box-social{
-   
+.social__list{
+   @extend %list;
    
     display: flex;
     justify-content: space-between;
 }
+.social__items{
+    @extend %list;
+}
+.social__link{
+    
 
-.link-social{
     display:flex;
     justify-content: center;
     align-items: center;
@@ -16,13 +20,15 @@
     background-color: inherit;
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.icon-social {
+
+        &:hover,
+        &:focus{
+            background-color: var(--accent__color);
+            color: var(--maine__color__light);
+        }
+    }
+.social__icon {
 fill: currentColor;
+
     
-}
-.link-social:hover,
-.link-social:focus{
-    background-color: var(--accent__color);
-    color: var(--maine__color__light);
 }

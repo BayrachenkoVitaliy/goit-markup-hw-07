@@ -32,6 +32,17 @@
   overflow: hidden;
 }
 
+.button__footer-form, .heroi-button, .button__form {
+  border-radius: 4px;
+  background-color: var(--accent__color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--maine__color__light);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 body {
   font-family: var(--fontfamily__praimary);
   color: var(--maine__color__dark);
@@ -56,7 +67,15 @@ img {
   text-decoration: none;
 }
 
+.partner-link, .potrfolio-link-cards, .consent__link, .address__link, .header-contact-link, .header-link-items, .logo {
+  text-decoration: none;
+}
+
 .list {
+  list-style: none;
+}
+
+.team__items, .activity__list, .benefits__list, .address__contacts, .social__items, .social__list {
   list-style: none;
 }
 
@@ -64,7 +83,15 @@ img {
   font-style: normal;
 }
 
+.communication__text, .address__link {
+  font-style: normal;
+}
+
 .section {
+  padding: 94px 0;
+}
+
+.team, .activity, .benefits {
   padding: 94px 0;
 }
 
@@ -75,18 +102,14 @@ img {
   padding-right: 15px;
 }
 
-.button {
-  border-radius: 4px;
-  background-color: var(--accent__color);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  color: var(--maine__color__light);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.footer__conteiner, .team__conteiner, .activity__conteiner, .benefits__conteiner {
+  margin: 0 auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.logo-web {
+.logo__web {
   font-family: var(--fontfamily__secondery);
   font-weight: 700;
   font-size: 26px;
@@ -171,12 +194,12 @@ img {
   fill: currentColor;
 }
 
-.icon-box-social {
+.social__list {
   display: flex;
   justify-content: space-between;
 }
 
-.link-social {
+.social__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -187,47 +210,38 @@ img {
   background-color: inherit;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.icon-social {
-  fill: currentColor;
-}
-
-.link-social:hover,
-.link-social:focus {
+.social__link:hover, .social__link:focus {
   background-color: var(--accent__color);
   color: var(--maine__color__light);
 }
 
-.footer-list:not(:last-child) {
+.social__icon {
+  fill: currentColor;
+}
+
+.address {
+  margin-right: 70px;
+}
+
+.address__contacts a:hover,
+.address__contacts a:focus {
+  color: var(--accent__color);
+}
+
+.address__list:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.foter-link {
+.address__link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-adress {
-  margin-right: 70px;
-}
-
-.footer-adress-geoposition {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+.address__link--white {
   color: var(--maine__color__light);
-}
-
-.footer-adress-geoposition:hover,
-.footer-adress-geoposition:focus,
-.foter-link:hover,
-.foter-link:focus {
-  color: var(--accent__color);
 }
 
 .backdrop {
@@ -341,7 +355,7 @@ img {
   width: 18px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form__field:focus + .label__icon {
+.label__field:focus + .label__icon {
   fill: var(--accent__color);
 }
 
@@ -626,21 +640,17 @@ img {
   padding-bottom: 0;
 }
 
-.benefits-header {
-  color: rgba(0, 0, 0, 0);
-}
-
-.benefits-list {
+.benefits__list {
   display: flex;
   margin-left: -30px;
 }
 
-.benefits-items {
+.benefits__items {
   margin-left: 30px;
   flex-basis: 270px;
 }
 
-.icon-box-benefits {
+.benefits__picture {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -649,12 +659,12 @@ img {
   margin-bottom: 30px;
 }
 
-.icon-benefits {
+.benefits__icon {
   width: 70px;
   height: 70px;
 }
 
-.benefits-items-heder {
+.benefits__title {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -664,7 +674,7 @@ img {
   color: var(--maine__color__dark);
 }
 
-.benefits-items-text {
+.benefit__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -672,7 +682,7 @@ img {
   color: var(--maine__color__secondery);
 }
 
-.activityd-header {
+.activity__title {
   margin-bottom: 50px;
   text-align: center;
   font-weight: 700;
@@ -682,17 +692,17 @@ img {
   color: var(--maine__color__dark);
 }
 
-.activity-list {
+.activity__list {
   display: flex;
   margin-left: -30px;
 }
 
-.activity-items {
+.activity__items {
   position: relative;
   margin-left: 30px;
 }
 
-.activity-description {
+.activity__description {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -704,7 +714,7 @@ img {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.activity-description-text {
+.activity__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -714,24 +724,11 @@ img {
   color: var(--maine__color__light);
 }
 
-.team-section {
-  padding: 94px 0;
+.team {
   background-color: #F5F4FA;
 }
 
-.team-list {
-  display: flex;
-  margin-left: -30px;
-}
-
-.team-items {
-  width: 270px;
-  margin-left: 30px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  background-color: var(--maine__color__light);
-}
-
-.team-header {
+.team__title {
   margin-bottom: 50px;
   text-align: center;
   font-weight: 700;
@@ -741,14 +738,26 @@ img {
   color: var(--maine__color__dark);
 }
 
-.team-items-text {
+.team__list {
+  display: flex;
+  margin-left: -30px;
+}
+
+.team__items {
+  width: 270px;
+  margin-left: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: var(--maine__color__light);
+}
+
+.team__text-box {
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 32px;
   padding-right: 32px;
 }
 
-.team-card {
+.team__name {
   margin-bottom: 10px;
   text-align: center;
   font-weight: 500;
@@ -758,7 +767,7 @@ img {
   color: var(--maine__color__dark);
 }
 
-.team-card-text {
+.team__description {
   margin-bottom: 16px;
   text-align: center;
   font-weight: 400;
@@ -820,24 +829,18 @@ img {
   background-color: var(--backgroundcolor__dark);
 }
 
-.footer-conteiner {
+.footer__conteiner {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
 }
 
-.logo-footer {
+.logo__footer {
   margin-bottom: 20px;
   color: var(--maine__color__light);
-  display: block;
-  font-family: var(--fontfamily__secondery);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 
-.discraption-footer-join {
+.communication__text {
   display: block;
   margin-bottom: 20px;
   font-weight: 700;
@@ -848,13 +851,11 @@ img {
   color: #FFFFFF;
 }
 
-.icon-box-social {
-  display: flex;
-  justify-content: space-between;
+.social__footer {
   min-width: 206px;
 }
 
-.link-social-footer {
+.social__link-footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -865,13 +866,11 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--maine__color__light);
 }
-
-.link-social-footer:hover,
-.link-social-footer:focus {
+.social__link-footer:hover, .social__link-footer:focus {
   background-color: var(--accent__color);
 }
 
-.icon-social-footer {
+.social__icon-footer {
   fill: currentColor;
 }
 
