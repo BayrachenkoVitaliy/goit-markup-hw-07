@@ -1,4 +1,4 @@
-.heroi{ 
+.hero{ 
     background-color: var(--backgroundcolor__dark);
     background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heroiImg\ .jpg)  ;
    background-repeat: no-repeat;
@@ -8,12 +8,14 @@
    padding-bottom: 200px;
    
    }
-   .heroi-conteiner{
+   .hero__conteiner{
+@extend %conteiner;
+
     text-align: center;
     }
    
    
-   .heroi-header{
+   .hero__title{
    margin-bottom: 30px;
    width: 696px;
    margin-left: auto;
@@ -27,16 +29,15 @@
    color:var(--maine__color__light);
    
    }
-   .heroi-button{
+   .hero__button{
     @extend %button;
    min-width: 216px;
    padding: 10px;
    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
-   }
-   .heroi-button:hover,
-   .heroi-button:focus
-   {
+
+   &:hover,&:focus{
    background-color: #188CE8;
-   cursor: pointer;
+   cursor: pointer;   }
    }
+  
    

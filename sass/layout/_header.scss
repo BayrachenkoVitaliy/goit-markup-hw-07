@@ -1,11 +1,15 @@
 .header{
-
     border-bottom: 1px solid #ECECEC;
     }
-.header-conteiner{
-    display: flex;
+.header__conteiner{
+    @extend %conteiner;
 
+    display: flex;
 }
+.logo__header{
+    align-self: center;
+}
+
 .current::after{
     content: "";
 position: absolute;
@@ -19,11 +23,7 @@ left: -4%;
     border-radius: 2px;
 }
 
-.header-link-items:hover,
-.header-link-items:focus{
-    color: var(--accent__color);
-    
-}
+
 
 
 

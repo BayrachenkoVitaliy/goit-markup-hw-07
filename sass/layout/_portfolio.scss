@@ -1,4 +1,9 @@
-.potrfolio-main{
-    padding-top: 94px;
-        padding-bottom: 94px;
+.potrfolio{
+@extend %section;
+
+padding-top: 94px;
+padding-bottom: 94px;
     }
+.potrfolio__conteiner{
+    @extend %conteiner;
+}

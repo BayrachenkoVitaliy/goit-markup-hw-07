@@ -1,7 +1,10 @@
-.partner-company{
+.partner{
     padding: 94px 0;
 }
-.header-partner{
+.partner__conteiner{
+    @extend %conteiner;
+}
+.partner__title{
     margin-bottom: 50px;
     
         font-weight: 700;
@@ -10,14 +13,16 @@
         text-align: center;
         letter-spacing: 0.03em;
 }
-.partner-logo-box{
+.partner__list{
+@extend %list;
+
 display: flex;
 flex-direction: row;
     justify-content: space-between;
 
 }
 
-.partner-link{
+.partner__link{
     @extend %link;
 
     width: 170px;
@@ -33,19 +38,22 @@ border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
     border: 1px solid;
     border-color: var(--color__icon);
     color: var(--color__icon);
-}
-.partner-link:hover,
-.partner-link:focus{
+
+&:hover,
+&:focus{
 border: 1px solid ;
 border-color: var(--accent__color);
     }
-
-.partner-logo{
-fill: currentColor;
-}
-.partner-link:hover,
-.partner-link:focus{
+&:hover,
+&:focus{
     color: var(--accent__color);
 }
+}
+
+
+.partner__logo{
+fill: currentColor;
+}
+
 
 

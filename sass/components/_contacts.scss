@@ -1,18 +1,21 @@
-.header-contact{
+.contact{
+@extend %list;
+
     display: flex;
     align-items: center;
     margin-left: auto;
 }
-
-.header-contact-list:not(:last-child){
-margin-right: 50px;
-}
-.header-contact-list{
+.contact__items{
     display: flex;
     align-items: center;
-    
-}
-.header-contact-link{
+    &:not(:last-child){
+        margin-right: 50px;
+        }
+    & svg{
+    margin-right: 10px; 
+    fill: currentColor;}
+   }
+.contact__link{
     @extend %link;
 
     display: flex;
@@ -26,15 +29,11 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--maine__color__secondery);
 
-
-}
-.header-contact-link:hover,
-.header-contact-link:focus{
+&:hover,
+&:focus{
 color: var(--accent__color);
 }
-
-
-.header-contact-list svg{
- margin-right: 10px; 
-fill: currentColor;
 }
+
+
+
