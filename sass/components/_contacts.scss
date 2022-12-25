@@ -13,9 +13,13 @@
 
 &:not(:last-child){
    margin-right: 50px;}
-& svg{fill: currentColor;
+
+& svg{
+   margin-right: 10px;
+   fill: currentColor;
    }
 }
+
 
 .contact__link{
    @extend %link;
