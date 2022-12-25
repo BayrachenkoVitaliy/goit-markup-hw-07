@@ -12,7 +12,6 @@ color: var(--accent__color);
 .address__list:not(:last-child){
 margin-bottom: 9px;
 }
-
 .address__link {
 @extend %link;
 @extend %text;

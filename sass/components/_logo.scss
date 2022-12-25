@@ -8,9 +8,9 @@ color:var(--accent__color) ;
 
 }
 .logo {
-    @extend %link;
+@extend %link;
 
-    display: block;
+display: block;
 margin-right: 94px;
 
 font-family: var(--fontfamily__secondery);
