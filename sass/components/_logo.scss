@@ -1,22 +1,22 @@
 .logo__web{
     font-family: var(--fontfamily__secondery);
-font-weight: 700;
-font-size: 26px;
-line-height: 1.19;
-letter-spacing: 0.03em;
-color:var(--accent__color) ;
-
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color:var(--accent__color) ;
+    font-weight: 700;
 }
+
 .logo {
-@extend %link;
+    @extend %link;
 
-display: block;
-margin-right: 94px;
+    margin-right: 94px;
+    display: block;
 
-font-family: var(--fontfamily__secondery);
-font-weight: 700;
-font-size: 26px;
-line-height: 1.19;
-letter-spacing: 0.03em;
-color: #000000;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #000000;
+    font-family: var(--fontfamily__secondery);
 }
